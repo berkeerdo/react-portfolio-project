@@ -1,9 +1,14 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import NavigationBar from "./components/NavigationBar";
+// import Footer from "./components/Footer";
 
 function App() {
   return (
-    <h2>React Portfolio...</h2>
+    <div>
+      <NavigationBar />
+      {/* <Footer/> */}
+    </div>
   );
 }
 
