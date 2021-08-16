@@ -1,14 +1,35 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Particles from "react-particles-js";
 import NavigationBar from "./components/NavigationBar";
-// import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <div>
+    <>
+      <Particles
+        params={{
+          particles: {
+            number: {
+              value: 30,
+              density: {
+                enable: true,
+                value_area: 900,
+              },
+            },
+            shape: {
+              type: "star",
+              stroke: {
+                width:6,
+                color : "#f9ab00"
+              }
+            }
+          },
+        }}
+      />
       <NavigationBar />
-      {/* <Footer/> */}
-    </div>
+      <Header />
+    </>
   );
 }
 
